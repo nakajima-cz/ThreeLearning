@@ -1,0 +1,40 @@
+{
+  "name": "learning_three",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildJs": "webpack",
+    "watchJs": "webpack -w",
+    "buildHtml": "pug src/html/ --hierarchy -o dist/ -P",
+    "watchHtml": "pug src/html/ --hierarchy -o dist/ -w -P",
+    "buildCss": "node-sass src/css/style.scss --importer node_modules/node-sass-globbing/index.js dist/css/style.css --output-style expanded --source-map dist/css/",
+    "watchCss": "chokidar \"src/css/\" --command \"npm run buildCss\" --initial",
+    "server": "browser-sync start -s dist -w src/*.pug src/css/*.scss src/js/*.ts",
+    "watch": "run-p server watchJs watchHtml watchCss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.3.33",
+    "@types/three": "^0.103.2",
+    "browser-sync": "^2.26.7",
+    "chokidar": "^3.3.1",
+    "chokidar-cli": "^2.1.0",
+    "node-sass": "^4.13.1",
+    "node-sass-globbing": "0.0.23",
+    "npm-run-all": "^4.1.5",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "three": "^0.114.0"
+  }
+}
