@@ -17,7 +17,7 @@ module.exports = {
     },
     // import 文で .ts ファイルを解決するため
     resolve: {
-        extensions: [".ts"]
+        extensions: [".ts", ".js"]
     },
     plugins: [
         new webpack.ProvidePlugin({

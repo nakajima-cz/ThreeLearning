@@ -32,9 +32,15 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "@types/dat.gui": "^0.7.5",
+    "dat.gui": "^0.7.6",
     "jquery": "^3.4.1",
     "pug": "^2.0.4",
     "pug-cli": "^1.0.0-alpha6",
     "three": "^0.114.0"
+  },
+  "engines": {
+    "node": ">=10.x",
+    "npm": ">=6.9.0"
   }
 }
