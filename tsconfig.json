@@ -3,6 +3,19 @@
     "sourceMap": true,
     "target": "es5",
     "module": "es2015",
-    "moduleResolution": "node"
-  }
+    "moduleResolution": "node",  // node_modules からライブラリを読み込む
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "types"
+    ],
+    "lib": [
+      "dom",
+      "es2018"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "types/**/*"
+  ]
 }

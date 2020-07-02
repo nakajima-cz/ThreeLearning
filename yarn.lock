@@ -2,6 +2,26 @@
 # yarn lockfile v1
 
 
+"@createjs/core@^2.0.0-beta.4":
+  version "2.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@createjs/core/-/core-2.0.0-beta.4.tgz#f98c7c60b35659c35dc2646da9af2b9ed14333fd"
+  integrity sha512-+csRjNJozE+C+4JfPEOV7lL6czWHB/+hBpA/oY4JeuVwEsLisaTzwEvfDd6XUUeK3ldlU14RzxZZYD5fDx7gBw==
+
+"@createjs/easeljs@^2.0.0-beta.2":
+  version "2.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@createjs/easeljs/-/easeljs-2.0.0-beta.4.tgz#48dc7d05f9bab8ce48d644be5838311577963fdc"
+  integrity sha512-jaZQ4qm71177xJ4NT1EAWNSf3eI5EfWvDHufJ9QaVMQxjW+eMkh8QTZg7U9jPwll/6l9XegSToZZokTYaPM59A==
+  dependencies:
+    "@createjs/core" "^2.0.0-beta.4"
+    "@createjs/tweenjs" "^2.0.0-beta.4"
+
+"@createjs/tweenjs@^2.0.0-beta.1", "@createjs/tweenjs@^2.0.0-beta.4":
+  version "2.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@createjs/tweenjs/-/tweenjs-2.0.0-beta.4.tgz#909afc765892bc0d2260c472b1e12d9197ebe732"
+  integrity sha512-8TBzHn76mKR0PSUcLx3qxfJSMysOdsgYbJFoG/YeH/ViTWBOwmGVeZr6SIylFbqGHLtUyXDQEvSa1enSGUT5XQ==
+  dependencies:
+    "@createjs/core" "^2.0.0-beta.4"
+
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.7.tgz#667eb1640e8039436028055737d2b9986ee336e3"
@@ -14,10 +34,39 @@
   dependencies:
     "@types/babel-types" "*"
 
+"@types/createjs-lib@*":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@types/createjs-lib/-/createjs-lib-0.0.29.tgz#fae82e3ba8606663b190e789cec7d9c728fc41d7"
+  integrity sha1-+uguO6hgZmOxkOeJzsfZxyj8Qdc=
+
+"@types/createjs@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@types/createjs/-/createjs-0.0.29.tgz#4d19b0feaa38252dcd79d78a38a4cc6df3f181fc"
+  integrity sha1-TRmw/qo4JS3NedeKOKTMbfPxgfw=
+  dependencies:
+    "@types/createjs-lib" "*"
+    "@types/easeljs" "*"
+    "@types/preloadjs" "*"
+    "@types/soundjs" "*"
+    "@types/tweenjs" "*"
+
 "@types/dat.gui@^0.7.5":
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/@types/dat.gui/-/dat.gui-0.7.5.tgz#8f4f87300ae553a57b246a7bf1b9fe5e13ca8b79"
   integrity sha512-5AqLThlTiuDSOZA7XZFogRj/UdGKn/iIfdFPuh37kY4s7TjTt+YUOlUmcCrY6wAYFFyThtt2z8qZlYcdkhJZ5w==
+
+"@types/easeljs@*":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/easeljs/-/easeljs-1.0.0.tgz#b339ca0a8d0148819831b0140254d697fd46d974"
+  integrity sha512-DkhxqkgylaZGeuod35MCiv1Rix8GnBGv+URRBZt4rsMvhyi7Iap6SZbeEN5bD3b8BXHozHEKB/to9ohUDr3GIA==
+  dependencies:
+    "@types/createjs-lib" "*"
+    "@types/tweenjs" "*"
+
+"@types/gsap@^1.19.2":
+  version "1.20.2"
+  resolved "https://registry.yarnpkg.com/@types/gsap/-/gsap-1.20.2.tgz#038d0e81a8dd50b9b6894f34f3cd4045f71c62b8"
+  integrity sha512-i9nUsnS32+VTgoX5IlaCYukJpCoB3c6h3bZvO67aIRdb3z8NFTWgeUDpQutLyb1ujowp6nw37qLQNvEowqq8yw==
 
 "@types/jquery@^3.3.33":
   version "3.3.33"
@@ -26,10 +75,25 @@
   dependencies:
     "@types/sizzle" "*"
 
+"@types/preloadjs@*":
+  version "0.6.32"
+  resolved "https://registry.yarnpkg.com/@types/preloadjs/-/preloadjs-0.6.32.tgz#12cff7c7f92e3838a780d438ce49c8cec981830d"
+  integrity sha1-Es/3x/kuODingNQ4zknIzsmBgw0=
+  dependencies:
+    "@types/createjs-lib" "*"
+
 "@types/sizzle@*":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
   integrity sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
+
+"@types/soundjs@*":
+  version "0.6.28"
+  resolved "https://registry.yarnpkg.com/@types/soundjs/-/soundjs-0.6.28.tgz#cf748e90dd78f66c3f54fab41536f60a42c8c002"
+  integrity sha512-K3ktwPvYfQrH+qGEe1tgxC5o4rJC7CVxQmL9Cz9tgVq0oW99PmPfRp1F7YXELibCvV3lieD4E0sUZvnDEKWaPg==
+  dependencies:
+    "@types/createjs-lib" "*"
+    "@types/preloadjs" "*"
 
 "@types/three@^0.103.2":
   version "0.103.2"
@@ -37,6 +101,18 @@
   integrity sha512-zhtf0Qs5wLJpIn1+VWCpzSgpKayj/GSWZ6woiuz09FW59KEDeLpnBkYz6lbblVpRmGdlnG8nd0unaASshOvcXw==
   dependencies:
     three "*"
+
+"@types/tweenjs@*":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/tweenjs/-/tweenjs-1.0.1.tgz#aa32347004ec91bb1cc6a6b3c50b24a45fdff5cd"
+  integrity sha512-iBxS3evVrsrTfG/CgIKGT6RyM470NtLF/ybhCQQ1NkqokDxcRp5sF58XUwwXGzenYqG7H+njOnmCvCyG9wmgvg==
+  dependencies:
+    "@types/createjs-lib" "*"
+
+"@types/webfontloader@^1.6.29":
+  version "1.6.32"
+  resolved "https://registry.yarnpkg.com/@types/webfontloader/-/webfontloader-1.6.32.tgz#8a02698b7a07a9f2cc8e34d7223dc5d59ccff77a"
+  integrity sha512-l83V/2iHvBTIlKUM1+UlabS/Jd65HVfKmqS+zPhwDlgldPtd5ujPDt0Y1es19xLWcN8NC3wwSTd71Qxbst+Kpw==
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -564,6 +640,11 @@ bluebird@^3.5.5:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
+
+blueimp-load-image@^2.28.0:
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/blueimp-load-image/-/blueimp-load-image-2.28.0.tgz#38a135723f39da465e62644bcf2f3baed2bc7a82"
+  integrity sha512-kks0mH7cF+V1qcxk7w+JYwX8k8rzM6ebZ3j8bssoX38vX9iRJHvjqpfpZLYWrnCoSYjbpB/TM3EQUaFuSS0BMg==
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   version "4.11.8"
@@ -2007,6 +2088,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
   integrity sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
 
+gsap@^2.0.1:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-2.1.3.tgz#c63ee3a50f0b7dc3b46ed0845bb0f09049feb944"
+  integrity sha512-8RFASCqi2FOCBuv7X4o7M6bLdy+1hbR0azg+MG7zz+EVsI+OmJblYsTk0GEepQd2Jg/ItMPiVTibF7r3EVxjZQ==
+
 har-schema@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/har-schema/-/har-schema-2.0.0.tgz#a94c2224ebcac04782a0d9035521f24735b7ec92"
@@ -2670,7 +2756,7 @@ loader-utils@1.2.3:
     emojis-list "^2.0.0"
     json5 "^1.0.1"
 
-loader-utils@^1.0.2, loader-utils@^1.2.3:
+loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.4.0.tgz#c579b5e34cb34b1a74edc6c1fb36bfa371d5a613"
   integrity sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==
@@ -2888,6 +2974,11 @@ mime@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
   integrity sha512-KI1+qOZu5DcW6wayYHSzR/tXKCDC5Om4s1z2QJjDULzLcmf3DvzS7oluY4HCTrc+9FiKmWUgeNLg7W3uIQvxtQ==
+
+mime@^2.0.3:
+  version "2.4.6"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.6.tgz#e5b407c90db442f2beb5b162373d07b69affa4d1"
+  integrity sha512-RZKhC3EmpBchfTGBVb8fb+RL2cWyw/32lshnsETttkBAyAUXSGHxbEJWWRXc751DrIxG1q04b8QwMbAwkRPpUA==
 
 mimic-fn@^2.0.0:
   version "2.1.0"
@@ -4856,6 +4947,15 @@ urix@^0.1.0:
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
+url-loader@^1.0.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-1.1.2.tgz#b971d191b83af693c5e3fea4064be9e1f2d7f8d8"
+  integrity sha512-dXHkKmw8FhPqu8asTc1puBfe3TehOCo2+RmOOev5suNCIYBcT626kxiWg1NBVkwc4rO8BGa7gP70W7VXuqHrjg==
+  dependencies:
+    loader-utils "^1.1.0"
+    mime "^2.0.3"
+    schema-utils "^1.0.0"
+
 url@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/url/-/url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1"
@@ -4938,6 +5038,11 @@ watchpack@^1.6.0:
     chokidar "^2.0.2"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
+
+webfontloader@^1.6.28:
+  version "1.6.28"
+  resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+  integrity sha1-23hhKSU8tujq5UwvsF+HCvZnW64=
 
 webpack-cli@^3.3.11:
   version "3.3.11"
